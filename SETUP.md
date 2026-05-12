@@ -1,158 +1,156 @@
 # Jade Daily Pulse — Setup
 
-Eight steps. About 15 minutes start to finish. By the end you'll have a daily 1-page memo on your brand landing every morning at 7am.
+Seven short steps. About 15 minutes. By the end, a 1-page brand memo will land on your computer every morning at 7am.
 
-Prerequisite: Claude Desktop installed with Cowork enabled (Pro, Max, Team, or Enterprise plan). If you don't have it yet, grab it at [claude.com/download](https://claude.com/download).
+**Before you start:** Make sure Claude Desktop is installed and you're on a paid plan (Pro, Max, Team, or Enterprise). Cowork only works on paid plans. If you don't have Claude Desktop yet, grab it at [claude.com/download](https://claude.com/download).
 
 ---
 
-## Step 1 · Confirm Cowork is on
+## Step 1 · Open Cowork
 
-Open Claude Desktop. In the sidebar you should see **Cowork**. If you don't, go to Settings → Cowork and enable it.
+Open the Claude app. In the left sidebar, find and click **Cowork**.
 
-**How you know it worked:** the sidebar shows Cowork, with options for Tasks, Projects, and Scheduled.
+**You'll know it worked when** the sidebar shows options like **Tasks**, **Projects**, and **Scheduled**.
 
 ---
 
 ## Step 2 · Download the Jade Daily Pulse folder
 
-Go to [github.com/jadesuser/jade-daily-pulse](https://github.com/jadesuser/jade-daily-pulse) and click **Code → Download ZIP**.
+Go to [github.com/jadesuser/jade-daily-pulse](https://github.com/jadesuser/jade-daily-pulse). Click the green **Code** button, then **Download ZIP**.
 
-Unzip it. Move the folder to a stable location on your machine — `~/Documents/jade-daily-pulse/` works well. (Don't put it inside Downloads; macOS cleans Downloads on a schedule.)
+Find the downloaded ZIP, unzip it, and move the resulting folder into your **Documents** folder. (Don't leave it in Downloads — your computer cleans Downloads automatically.)
 
-**How you know it worked:** the folder is at e.g. `~/Documents/jade-daily-pulse/` and contains `SKILL.md`, `brand-profile.md`, `brand-profile.example.md`, `SETUP.md`, `README.md`, and an empty `memos/` subfolder.
-
----
-
-## Step 3 · Create a Cowork Project and connect the folder
-
-In Cowork, click **+ New Project**. Name it **Jade Daily Pulse**.
-
-Inside the new project, click **Connect folder** (or "Add folder" — wording varies). Browse to your `jade-daily-pulse/` folder and connect it. Grant Cowork read and write permission when prompted.
-
-**How you know it worked:** Cowork shows the folder contents in the project sidebar. You can see `SKILL.md`, `brand-profile.md`, etc.
+**You'll know it worked when** there's a folder called `jade-daily-pulse` inside your Documents.
 
 ---
 
-## Step 4 · Set the project instructions
+## Step 3 · Make a Cowork project from that folder
 
-In the project, open the **Project instructions** field. Paste:
+In Cowork's sidebar, click **+ New Project**.
 
-> Follow the instructions in `SKILL.md` in this project's connected folder. When the user asks to run the Jade Daily Pulse, or when invoked on a schedule, execute that skill — read `brand-profile.md`, gather signals, and write the memo to `memos/{today}.md`.
+When Cowork asks how you want to create the project, choose **Create from folder**. Browse to the `jade-daily-pulse` folder you just placed in Documents and select it.
 
-Save the instructions.
+If Cowork asks for permission to read and write inside this folder, click **Allow**.
 
-**How you know it worked:** the project instructions show your saved text.
-
----
-
-## Step 5 · Fill in your brand profile
-
-Open `brand-profile.md` from the connected folder (either inside Cowork's file view or in your normal text editor — both work, since Cowork sees the file system live).
-
-Replace every `<...>` placeholder. Sentences, not paragraphs. The companion file `brand-profile.example.md` shows the shape using thejade.shop.
-
-| Field | What to write |
-|---|---|
-| **brand** | Your brand name. |
-| **positioning** | Two sentences. What you sell, who it's for, what makes you different. No "premium," no "innovative." |
-| **ICP** | Who actually buys you, one sentence. Demographic + psychographic. |
-| **competitors** | 2–4 named brands you actually watch. |
-| **topics to flag** | 2–4 topics, narratives, or controversies you want surfaced. |
-| **sources you trust** | Optional. Subreddits, outlets, creators, Substacks. |
-| **cadence** | `daily` or `weekly`. |
-| **delivery time** | Default `07:00`. |
-| **timezone** | e.g., `America/New_York`. |
-
-Save the file.
+**You'll know it worked when** a new project called **jade-daily-pulse** appears in your sidebar, and you can see files inside it (`SKILL.md`, `brand-profile.md`, and a few others). Don't open any of them yet.
 
 ---
 
-## Step 6 · Preview the pulse once
+## Step 4 · Tell Claude how to behave in this project
 
-This is a one-time preview so you can see what the agent does before you set it loose on a schedule. In your project's chat, type:
+Inside your new project, find the **Project instructions** field (usually a text box near the top). Copy and paste this:
+
+> Follow the instructions in `SKILL.md` in this project's folder. When I ask you to run the Jade Daily Pulse — or when this is triggered on a schedule — read `brand-profile.md`, gather signals from the web, and save the memo as today's date inside the `memos/` folder.
+
+Click **Save**.
+
+**You'll know it worked when** the project instructions show your saved text.
+
+---
+
+## Step 5 · Fill in your brand info
+
+In the project file list, click **`brand-profile.md`** to open it.
+
+You'll see fields — *brand*, *positioning*, *ICP*, *competitors*, and a few others — each with a placeholder in pointy brackets like `<...>`. Replace every placeholder with your own answer. Short sentences, not paragraphs.
+
+If you get stuck on what to write, open **`brand-profile.example.md`**. It shows the same fields filled in for a real brand (thejade.shop) you can use as a reference.
+
+Save the file when you're done.
+
+**A few prompts that help:**
+- **Positioning:** avoid words like "premium" or "innovative." Be specific. What do you actually sell, to whom, and what is genuinely different?
+- **Competitors:** 2 to 4 brands you actually watch.
+- **Cadence:** type `daily` or `weekly`.
+- **Timezone:** use your local zone, like `America/New_York`.
+
+---
+
+## Step 6 · Try it once
+
+This is a one-time test so you can see the agent in action — *the real product is the scheduled task in Step 7*, but it's worth watching it work in front of you first.
+
+In your project's chat box, type:
 
 > Run the Jade Daily Pulse.
 
-Cowork reads your brand profile, searches the web (Reddit, press, social, competitors), and writes a memo. Takes 60–120 seconds.
+…and hit enter.
 
-**How you know it worked:** Cowork prints the memo in chat and saves a new file at `memos/<today>.md` inside your connected folder.
+Claude goes off and searches the web for 60–120 seconds (Reddit, press, social, competitors). When it's done, you'll see the memo in chat **and** a new file appear in your project's `memos` folder named with today's date.
 
-This is the same memo you'll receive every morning once you schedule it in Step 8.
+Read the memo. It has four sections plus a competitor footer:
 
----
-
-## Step 7 · Read it (two minutes)
-
-The memo has four sections plus a competitor footer:
-
-1. **The dominant narrative** — single loudest thing being said about you, with two real quoted sources.
-2. **Three tensions** — two-things-both-true pulling against each other.
-3. **Where the world disagrees with your messaging** — gap between your positioning and what consumers say.
+1. **The dominant narrative** — the loudest thing being said about you right now, with two real quoted sources.
+2. **Three tensions** — places where two true things about your brand pull against each other.
+3. **Where the world disagrees with your messaging** — the gap between how you talk about yourself and what consumers actually say.
 4. **One early signal** — the thing nobody on your team is tracking yet.
 
-If a section feels generic, the fix is usually in your `positioning` or `topics to flag`. Edit `brand-profile.md` and re-run.
+Plus a **Competitor pulse** footer with 3–5 lines on what your competitors did in the last 24 hours.
+
+If anything reads generic, the fix is usually in your *positioning* or *topics to flag*. Edit `brand-profile.md`, save, and try this step again.
 
 ---
 
-## Step 8 · Schedule it — this is the part that matters
+## Step 7 · Schedule it — this is the part that matters
 
-The preview in Step 6 was a one-off. **This step is the actual product** — the scheduled task is what makes the Jade Daily Pulse a daily artifact instead of a tool you have to remember to run.
+This is the actual product. The scheduled task is what turns the Jade Daily Pulse from a tool-you-have-to-remember-to-run into a daily artifact that just shows up.
 
-In your project's chat, type:
+In your project's chat box, type:
 
 > /schedule
 
-Cowork walks you through a scheduled-task modal. Fill in:
+…and hit enter. Claude opens a scheduling form. Fill it in:
+
 - **Task name:** Jade Daily Pulse
 - **Prompt:** `Run the Jade Daily Pulse.`
 - **Frequency:** Daily
-- **Time:** 07:00 (your local time)
-- **Folder/Project:** Jade Daily Pulse (the project you just created)
+- **Time:** 7:00 AM (your local time)
+- **Folder/Project:** jade-daily-pulse
 
-Save the scheduled task.
+Click **Save**.
 
-**The one constraint to know about:** Cowork scheduled tasks only fire while your laptop is awake and Claude Desktop is open. If your laptop is closed at 7am, the task auto-runs the next time you open the app — and Cowork tells you it caught up. **Practically:** either leave your laptop awake overnight, or accept that the memo lands whenever you next open Claude. Both are fine.
+**One thing to know about scheduled tasks in Cowork:** they only fire while your computer is awake and the Claude app is open. If your laptop is closed at 7am, the task auto-runs the next time you open Claude, and Claude tells you it caught up.
 
-**How you'll know it worked:** tomorrow morning, you'll see a new file at `memos/<tomorrow's-date>.md` that you didn't create. That's the proof loop closed.
+In practice, this means: either leave your laptop awake overnight, or accept that your morning memo lands whenever you next open Claude with your coffee. Both are fine — but if you don't know about this, you'll think it's broken Saturday morning.
 
-To see, edit, or pause your scheduled task later: sidebar → **Scheduled**.
+**You'll know it worked when** — tomorrow morning — a new file appears in your project's `memos` folder named with tomorrow's date. A file you didn't create. That's your proof.
 
 ---
 
-## Step 9 · (Optional) Have it land in your inbox
+## Optional · Have the memo land in your inbox
 
-Skip this step if you're happy reading the memo inside Cowork.
+Skip this if you're happy reading the memo inside Claude.
 
-**One-time Gmail connection (~60 seconds):**
+**Connect Gmail (one-time, about 60 seconds):**
 
-1. In Claude Desktop, go to Settings → **Connectors**.
-2. Find **Gmail** in the list. Click Connect, sign in with your Google account, grant permission.
-3. Confirm by asking in any Cowork chat: `What's the subject of my most recent email?` — if Cowork can answer, you're connected.
+1. In Claude Desktop, go to **Settings → Connectors**.
+2. Find **Gmail** in the list. Click **Connect** and sign in with your Google account.
+3. Test it: in any Claude chat, ask *"What's the subject of my most recent email?"* If Claude can answer, you're connected.
 
-**Tell your scheduled task to email you:**
+**Then have your scheduled task email you:**
 
-Edit the scheduled task. Change the prompt to:
+Go to **Cowork → Scheduled**. Click your **Jade Daily Pulse** task. Edit the **Prompt** to:
 
-> Run the Jade Daily Pulse. After saving the memo, email it to <your-email@example.com> with subject "Your Jade Daily Pulse — {today's date}".
+> Run the Jade Daily Pulse. After saving the memo, email it to me at <your-email@example.com> with the subject "Your Jade Daily Pulse — [today's date]".
 
-That's it. The memo now lands in your inbox every morning before your first meeting (whenever the scheduled task next fires).
+Save. From tomorrow morning on, the memo also lands in your inbox.
 
 ---
 
 ## You're done
 
-The scheduled task in Step 8 is the product. Tomorrow morning at 7am — as long as your laptop is awake and Cowork is open — a fresh memo will be waiting for you on:
+You don't have to run anything yourself anymore. Every morning, a fresh memo will be waiting for you on:
+
 - what consumers are actually saying about you,
 - where their words diverge from yours,
 - and the one signal you'd otherwise miss.
 
-You don't have to run anything manually again. The skill reads `brand-profile.md` on every scheduled run, so any time you want to change what gets surfaced, edit the profile — the next morning's memo reflects it.
+To change what gets surfaced later, open `brand-profile.md` and edit it. The agent reads it on every run, so the next morning's memo will reflect your changes.
 
 ---
 
 ## Want the deeper version?
 
-The Daily Pulse is the **inward** lens — what the world is saying about *you*.
+The Daily Pulse is the **inward lens** — what the world is saying about *you*.
 
-The 1:1 follow-up builds the **outward** lens — what's happening in your *category and competitive landscape*. A five-section daily intelligence brief tuned to your taste over a private hour. Book a session with whoever ran your workshop.
+The 1:1 follow-up builds the **outward lens** — what's happening in your *category and competitive landscape*. A five-section daily intelligence brief, tuned to your taste in a private hour. Ask whoever ran your workshop how to book it.
