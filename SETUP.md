@@ -68,15 +68,17 @@ Save the file.
 
 ---
 
-## Step 6 · Run your first pulse
+## Step 6 · Preview the pulse once
 
-In your project's chat, type:
+This is a one-time preview so you can see what the agent does before you set it loose on a schedule. In your project's chat, type:
 
 > Run the Jade Daily Pulse.
 
 Cowork reads your brand profile, searches the web (Reddit, press, social, competitors), and writes a memo. Takes 60–120 seconds.
 
 **How you know it worked:** Cowork prints the memo in chat and saves a new file at `memos/<today>.md` inside your connected folder.
+
+This is the same memo you'll receive every morning once you schedule it in Step 8.
 
 ---
 
@@ -93,21 +95,26 @@ If a section feels generic, the fix is usually in your `positioning` or `topics 
 
 ---
 
-## Step 8 · Schedule it for every morning
+## Step 8 · Schedule it — this is the part that matters
+
+The preview in Step 6 was a one-off. **This step is the actual product** — the scheduled task is what makes the Jade Daily Pulse a daily artifact instead of a tool you have to remember to run.
 
 In your project's chat, type:
 
 > /schedule
 
-Cowork will walk you through creating a scheduled task. Fill in:
+Cowork walks you through a scheduled-task modal. Fill in:
 - **Task name:** Jade Daily Pulse
 - **Prompt:** `Run the Jade Daily Pulse.`
 - **Frequency:** Daily
 - **Time:** 07:00 (your local time)
+- **Folder/Project:** Jade Daily Pulse (the project you just created)
 
 Save the scheduled task.
 
-**Important constraint:** Cowork scheduled tasks only fire while your laptop is awake and the Claude Desktop app is open. If your laptop is closed at 7am, the task auto-runs the next time you open the app — and Cowork tells you it caught up.
+**The one constraint to know about:** Cowork scheduled tasks only fire while your laptop is awake and Claude Desktop is open. If your laptop is closed at 7am, the task auto-runs the next time you open the app — and Cowork tells you it caught up. **Practically:** either leave your laptop awake overnight, or accept that the memo lands whenever you next open Claude. Both are fine.
+
+**How you'll know it worked:** tomorrow morning, you'll see a new file at `memos/<tomorrow's-date>.md` that you didn't create. That's the proof loop closed.
 
 To see, edit, or pause your scheduled task later: sidebar → **Scheduled**.
 
@@ -135,12 +142,12 @@ That's it. The memo now lands in your inbox every morning before your first meet
 
 ## You're done
 
-Tomorrow morning at 7am — as long as your laptop is awake and Cowork is open — you'll have a fresh memo waiting on:
+The scheduled task in Step 8 is the product. Tomorrow morning at 7am — as long as your laptop is awake and Cowork is open — a fresh memo will be waiting for you on:
 - what consumers are actually saying about you,
 - where their words diverge from yours,
 - and the one signal you'd otherwise miss.
 
-Edit `brand-profile.md` any time. The skill reads it on every run, so any change shows up in the next memo.
+You don't have to run anything manually again. The skill reads `brand-profile.md` on every scheduled run, so any time you want to change what gets surfaced, edit the profile — the next morning's memo reflects it.
 
 ---
 
