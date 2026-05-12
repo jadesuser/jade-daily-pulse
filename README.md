@@ -20,6 +20,23 @@ Total length: fits on one phone screen. ~400 words.
 
 ---
 
+## What the agent looks at
+
+Every run, the agent searches a prioritized list of sources for signal on your brand, your category, and your named competitors:
+
+1. **Reddit** — where unvarnished consumer sentiment lives
+2. **TikTok and Instagram chatter** — creator content and comment-section themes
+3. **Press and trade** — Glossy, Beauty Independent, Business of Fashion, WWD, Modern Retail, Food Dive (CPG)
+4. **Substack and niche newsletters** — the opinionated takes
+5. **X / Twitter** — real-time discourse
+6. **Competitor parallel scan** — repeats steps 1–3 for each competitor in your profile
+
+All of this runs through Cowork's built-in web search and fetch — no extra setup, no API keys, works out of the box.
+
+**Want deeper sourcing?** If you want the agent wired directly into Reddit's API, a dedicated scraper for Substacks you trust, or your own social listening feeds, that's part of the 1:1 follow-up. Ask whoever ran your workshop.
+
+---
+
 ## Get started
 
 **→ Read [SETUP.md](SETUP.md) for the 8-step install. Takes about 15 minutes.**
