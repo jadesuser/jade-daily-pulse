@@ -100,8 +100,6 @@ Edit, save, run `Run the Jade Daily Pulse.` to see the change immediately — yo
 
 **Wire in your own sources.** The Daily Pulse uses Cowork's built-in web search. For deeper integration (Reddit API, niche scrapers, your own social listening) — that's the 1:1 follow-up.
 
-**The Daily Intelligence Brief.** The Daily Pulse is the *inward* lens (what the world says about you). The 1:1 builds the *outward* lens (what's happening in your category and competitive landscape). Five sections, tuned to your taste, in a private hour. Ask your facilitator.
-
 ---
 
 *Built with [Jade](https://jade.build) — daily intel agents for consumer brands.*
