@@ -2,7 +2,7 @@
 
 A daily 1-page memo on what the world is saying about your brand. Runs in **Claude Cowork**. Delivered to a markdown file every morning at 7am (and optionally to your inbox via the Gmail connector).
 
-Built for beauty, CPG, and fashion brand executives by [Jade](https://thejade.shop).
+Built for beauty, CPG, and fashion brand executives by [Jade](https://jade.build).
 
 ---
 
@@ -75,4 +75,4 @@ There is also an outward lens — the **Daily Intelligence Brief** — that watc
 
 ---
 
-*Built by [Jade](https://thejade.shop). Jade builds AI agents that do operational work for consumer brands.*
+*Built by [Jade](https://jade.build). Jade builds AI agents that do operational work for consumer brands.*
