@@ -26,7 +26,7 @@ Find the downloaded ZIP, unzip it, and move the resulting folder into your **Doc
 
 ## Step 3 · Make a Cowork project from that folder
 
-In Cowork's sidebar, click **+ New Project**.
+In Cowork's sidebar, click **Projects**, then click **+ New Project**.
 
 When Cowork asks how you want to create the project, choose **Create from folder**. Browse to the `jade-daily-pulse` folder you just placed in Documents and select it.
 
