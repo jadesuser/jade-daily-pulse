@@ -50,19 +50,18 @@ Click **Save**.
 
 ## Step 5 · Fill in your brand info
 
-In the project file list, click **`brand-profile.md`** to open it.
+You don't need to open any files. Just tell Claude in your project chat. Type something like:
 
-You'll see fields — *brand*, *positioning*, *ICP*, *competitors*, and a few others — each with a placeholder in pointy brackets like `<...>`. Replace every placeholder with your own answer. Short sentences, not paragraphs.
+> Fill in my brand profile. My brand is [your brand name]. We sell [what you sell] for [who you sell it to]. What makes us different is [the difference, in one or two sentences]. Our main competitors are [2 to 4 brands you actually watch]. Watch out for [topics, narratives, or controversies you want flagged]. Daily cadence, 7am, [your timezone, like America/New_York].
 
-If you get stuck on what to write, open **`brand-profile.example.md`**. It shows the same fields filled in for a real brand (thejade.shop) you can use as a reference.
+Claude reads `brand-profile.md`, writes your answers into the right fields, and saves the file. If you skipped anything important, Claude will ask follow-up questions.
 
-Save the file when you're done.
-
-**A few prompts that help:**
+**To get a sharper memo, be specific in your answers:**
 - **Positioning:** avoid words like "premium" or "innovative." Be specific. What do you actually sell, to whom, and what is genuinely different?
-- **Competitors:** 2 to 4 brands you actually watch.
-- **Cadence:** type `daily` or `weekly`.
-- **Timezone:** use your local zone, like `America/New_York`.
+- **Competitors:** 2 to 4 named brands. Generic categories don't help the agent; specific names do.
+- **Topics to flag:** what would make you say "I'd want to know about that"? Ingredients, retailer moves, controversies, cultural shifts in your space.
+
+**Prefer to edit the file directly?** You can. Click `brand-profile.md` in your project file list and replace each `<...>` placeholder. `brand-profile.example.md` shows the same fields filled in for a real brand (thejade.shop) if you want a reference.
 
 ---
 

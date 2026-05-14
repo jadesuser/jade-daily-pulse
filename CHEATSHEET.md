@@ -71,7 +71,7 @@ Claude Cowork lets you pick which model handles your prompts (look for the **mod
 | To do this | How |
 |---|---|
 | Read this morning's memo | Open the `memos` folder in your project |
-| Change what gets surfaced | Edit `brand-profile.md` in your project folder |
+| Change what gets surfaced | Tell Claude in chat (e.g., *"add Vrai to my competitors"*) — or edit `brand-profile.md` directly |
 | Run the agent now (don't wait for tomorrow) | Type `Run the Jade Daily Pulse.` in your project chat |
 | Change the schedule (time, frequency) | Sidebar → **Scheduled** → click your task |
 | Pause the agent (vacation, etc.) | Sidebar → **Scheduled** → pause toggle |
@@ -82,13 +82,15 @@ Claude Cowork lets you pick which model handles your prompts (look for the **mod
 
 ## When the memo feels off
 
-The first few days are calibration days. If a section reads generic or misses what you'd want, the fix is almost always in `brand-profile.md`:
+The first few days are calibration days. If a section reads generic or misses what you'd want, the fix is almost always in your brand profile. The fastest way to adjust it: just tell Claude in your project chat what to change. Examples:
 
-- **Section feels too broad?** Tighten your *positioning* and *ICP*. Be more specific. Drop adjectives like "premium" or "innovative" — they don't help the agent.
-- **Missing what you actually care about?** Add to *topics to flag*. The agent uses this list to prioritize signal.
-- **Competitor coverage thin?** Make sure you named 2–4 actual competitors in *competitors*. Generic categories don't work; named brands do.
+- *"Tighten my positioning — we're not 'premium,' we're [actual specific description]."*
+- *"Add 'retailer expansion at Sephora' to my topics to flag."*
+- *"Swap Glossier out of my competitors, swap Tower 28 in."*
 
-Edit, save, run `Run the Jade Daily Pulse.` to see the change immediately — you don't have to wait for tomorrow's scheduled run.
+Claude updates `brand-profile.md` directly and tells you what it changed. Then run `Run the Jade Daily Pulse.` to see the new memo immediately — you don't have to wait for tomorrow's scheduled run.
+
+If you'd rather edit the file by hand, you still can — open `brand-profile.md` and change it directly.
 
 ---
 
